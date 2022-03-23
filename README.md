@@ -4,6 +4,7 @@ Create a character that uses the main sprite on Space Invaders, and respond to u
 Move: Character will move left/right
 Fire: Character will fire a projectile.
 
+![part 1 scope](https://github.com/osobytes/SpaceInvaders/blob/master/Tutorial/Part1_Scope.gif)
 
 ## Topics:
 * Creating a New Unity Project
@@ -45,6 +46,7 @@ For the first part we will require a Unity Package called `Input System`
 For this part we will require two sprites: `Hero.png` and `Bullet.png`
 * Copy the two sprites to your **Sprites** folder.
 * From the Unity UI find both sprites in the folder, and select them to set these options using the inspector:
+![sprites config](https://github.com/osobytes/SpaceInvaders/blob/master/Tutorial/sprite_setup.png)
 * Apply Changes
 
 ## MonoBehaviour - Hero
