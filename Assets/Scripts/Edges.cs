@@ -2,15 +2,17 @@
 
 internal class Edges
 {
-    public Vector3 TopEdge;
-    public Vector3 LeftEdge;
-    public Vector3 RightEdge;
+    public float TopEdge;
+    public float LeftEdge;
+    public float RightEdge;
+    public float BottomEdge;
 
     public Edges()
     {
-        LeftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
-        RightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
-        TopEdge = Camera.main.ViewportToWorldPoint(Vector3.up);
+        LeftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero).x;
+        RightEdge = Camera.main.ViewportToWorldPoint(Vector3.right).x;
+        TopEdge = Camera.main.ViewportToWorldPoint(Vector3.up).y;
+        BottomEdge = Camera.main.ViewportToWorldPoint(Vector3.down).y;
     }
 
     private static Edges _instance;

@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
         var newPosition = transform.position + new Vector3(0f, Speed * Time.deltaTime, 0f);
         transform.position = newPosition;
 
-        if(transform.position.y > Edges.Instance.TopEdge.y)
+        if(transform.position.y > Edges.Instance.TopEdge)
         {
             Destroy(gameObject);
         }

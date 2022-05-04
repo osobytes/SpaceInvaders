@@ -56,10 +56,15 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EnemyBullet.cs" />
+    <Compile Include="Assets\Scripts\HealthController.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\Edges.cs" />
     <Compile Include="Assets\Scripts\FireCooldown.cs" />
+    <Compile Include="Assets\Scripts\Hero.cs" />
+    <Compile Include="Assets\Scripts\Invader.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\MobManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -1,31 +1,19 @@
 ﻿using UnityEngine;
 
-internal struct FireCooldown
+internal class FireCooldown
 {
-    private readonly float BaseCooldown;
-    private float CurrentCooldown;
-    public bool CanFire => CurrentCooldown == 0f;
-
-    public FireCooldown(float baseCooldown)
+    private float value;
+    public bool CanFire => value == 0f;
+    public void SetCooldown(float value)
     {
-        BaseCooldown = baseCooldown;
-        CurrentCooldown = 0f;
+        this.value = value;
     }
 
     public void Cooldown()
     {
-        if (CurrentCooldown != 0f)
+        if (this.value > 0f)
         {
-            return;
-        }
-        CurrentCooldown = BaseCooldown;
-    }
-
-    public void Update()
-    {
-        if (CurrentCooldown > 0f)
-        {
-            CurrentCooldown = Mathf.Max(CurrentCooldown - Time.deltaTime, 0f);
+            this.value = Mathf.Max(0f, this.value - Time.deltaTime);
         }
     }
 }
