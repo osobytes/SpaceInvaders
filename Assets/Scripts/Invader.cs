@@ -8,7 +8,7 @@ public class Invader : MonoBehaviour
     public Action<int, int> OnDestroyed;
     private int Row;
     private int Column;
-    private TweenMovement Movement;
+    private InvaderMovement Movement;
     public void SetRowAndColumn(int row, int column)
     {
         Row = row;
@@ -23,11 +23,6 @@ public class Invader : MonoBehaviour
     public void SetMoveY(float move, float delay, float speed)
     {
         Movement.SetMove(new Vector3(0f, move, 0f), delay, speed);
-    }
-
-    public (int Row, int Column) GetLineAndColumn()
-    {
-        return (Row, Column);
     }
 
     // Start is called before the first frame update
@@ -63,7 +58,7 @@ public class Invader : MonoBehaviour
     }
 }
 
-public struct TweenMovement {
+public struct InvaderMovement {
     private float x;
     private float y;
     private float cumulativeX;

@@ -41,7 +41,7 @@ public class Hero : MonoBehaviour
     private Vector3 ClampPosition(Vector3 position)
     {
         // Clamp the position of the character so they do not go out of bounds
-        position.x = Mathf.Clamp(position.x, Edges.Instance.LeftEdge, Edges.Instance.RightEdge);
+        position.x = Mathf.Clamp(position.x, Edges.Values.Left, Edges.Values.Right);
         return position;
     }
 

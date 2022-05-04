@@ -13,7 +13,7 @@ public class EnemyBullet : MonoBehaviour
         var newPosition = transform.position + new Vector3(0f, Speed * Time.deltaTime * -1, 0f);
         transform.position = newPosition;
 
-        if (transform.position.y < Edges.Instance.BottomEdge)
+        if (transform.position.y < Edges.Values.Bottom)
         {
             Destroy(gameObject);
         }

@@ -431,6 +431,9 @@ MonoBehaviour:
   GapY: 0.5
   FireCycle: 0.5
   FireProbability: 0.3
+  MovementCycle: 2
+  Rows: 5
+  Columns: 11
 --- !u!4 &1434776141
 Transform:
   m_ObjectHideFlags: 0

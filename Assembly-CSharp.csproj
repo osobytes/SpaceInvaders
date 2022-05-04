@@ -63,7 +63,6 @@
     <Compile Include="Assets\Scripts\FireCooldown.cs" />
     <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\Invader.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MobManager.cs" />
   </ItemGroup>
   <ItemGroup>
